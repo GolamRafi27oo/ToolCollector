@@ -1,0 +1,53 @@
+/* Basic CSS styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 0 20px;
+}
+h1 {
+  text-align: center;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.product-list {
+  list-style-type: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.product-item {
+  border: 1px solid #ccc;
+  padding-right: 50px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  
+}
+.product-item a{
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;  
+}
+
+
+.product-item img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+.category-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.most-searched {
+  margin-top: 30px;
+}
