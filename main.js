@@ -67,19 +67,20 @@ const products = [
 
   //Editor//////////////////////
   {
-    name: "Photopea (Image/Photo Editor)",
+    name: "Photopea (Image/ Photo Editor)",
     category: "editor",
     link: "https://www.photopea.com/",
     image: "https://www.photopea.com/promo/icon512.png",
   },
   {
-    name: "Remove Background(Image/Photo Editor)",
+    name: "Remove Background (Image/Photo Editor)",
     category: "editor",
     link: "https://www.remove.bg/",
-    image: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2b713d78181e35c5c49c07a0989b8095/remove-bg.png",
+    image:
+      "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_2b713d78181e35c5c49c07a0989b8095/remove-bg.png",
   },
   {
-    name: "Image Resizer(Image/Photo Editor)",
+    name: "Image Resizer (Image/ Photo Editor)",
     category: "editor",
     link: "https://imageresizer.com/",
     image: "https://imageresizer.com/favicon.ico",
@@ -88,31 +89,82 @@ const products = [
     name: "ClipChamp (Video editor)",
     category: "editor",
     link: "https://app.clipchamp.com/login",
-    image: "https://yt3.googleusercontent.com/Wi1EZjCgoZCqz7DsKcmBxKO7o39jIthf1XFnO2Qe__HGzgCNd0lAbZAXEZWkljIhrVEN710TvQ=s900-c-k-c0x00ffffff-no-rj",
+    image:
+      "https://yt3.googleusercontent.com/Wi1EZjCgoZCqz7DsKcmBxKO7o39jIthf1XFnO2Qe__HGzgCNd0lAbZAXEZWkljIhrVEN710TvQ=s900-c-k-c0x00ffffff-no-rj",
   },
   {
     name: "Adobe (Reverse video editor)",
     category: "editor",
     link: "https://www.adobe.com/express/feature/video/reverse",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZj0RpOrWVBqsxGrKFUT3vx9lHvueYfWDJhI9uFZfzw&s",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZj0RpOrWVBqsxGrKFUT3vx9lHvueYfWDJhI9uFZfzw&s",
   },
   {
-    name: "Soundtrap (Audio editor/maker/music)",
+    name: "Soundtrap music (Audio editor/maker)",
     category: "editor",
     link: "https://www.soundtrap.com/musicmakers",
-    image: "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1506951068/cmqicf4r1zaqksnmmib8.jpg",
+    image:
+      "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1506951068/cmqicf4r1zaqksnmmib8.jpg",
   },
   {
     name: "Sejda (PDF editor)",
     category: "editor",
     link: "https://www.sejda.com/pdf-editor",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiM727lFwaeOpKBKvfmgGqX10NQqYe8dwsnykVtUVcg&s",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiM727lFwaeOpKBKvfmgGqX10NQqYe8dwsnykVtUVcg&s",
+  },
+
+  // productivity /////////////////////////
+  {
+    name: "Quillbot (Paraphraser)",
+    category: "productivity",
+    link: "https://quillbot.com/",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
-    name: "Book",
-    category: "books",
-    link: "https://example.com/book",
-    image: "https://via.placeholder.com/150",
+    name: "Quillbot (Grammar check)",
+    category: "productivity",
+    link: "https://quillbot.com/grammar-check",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+  },
+  {
+    name: "Quillbot (Summarize)",
+    category: "productivity",
+    link: "https://quillbot.com/summarize",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+  },
+  {
+    name: "Quillbot (Translate)",
+    category: "productivity",
+    link: "https://quillbot.com/translate",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+  },
+  {
+    name: "Quillbot (Citation-generator)",
+    category: "productivity",
+    link: "https://quillbot.com/citation-generator",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+  },
+  {
+    name: "Grammarly (Plagiarism-checker)",
+    category: "productivity",
+    link: "https://www.grammarly.com/plagiarism-checker",
+    image: "https://www.mooclab.club/showcase/grammarly.503/cover-image",
+  },
+
+  {
+    name: "Planner5d (House desinger)",
+    category: "productivity",
+    link: "https://planner5d.com/",
+    image: "https://upload.wikimedia.org/wikipedia/commons/1/13/Planner_5D_logo.png",
+  },
+
+  // weather ///////////////////
+  {
+    name: "Windy (weather)",
+    category: "weather",
+    link: "https://www.windy.com/",
+    image: "https://s.cafebazaar.ir/images/icons/com.windyty.android-1c048d7d-4928-4732-8f94-73f66bd0cfb1_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize",
   },
   // Add more products as needed
 ];
@@ -124,8 +176,9 @@ const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const generatorlist = document.getElementById("generatorlist");
 const editorList = document.getElementById("editorList");
-const booksList = document.getElementById("booksList");
+const productivityList = document.getElementById("productivityList");
 const weatherList = document.getElementById("weatherList");
+
 const mostSearchedList = document.getElementById("mostSearchedList");
 
 // Function to display products based on search and category filters
@@ -136,7 +189,7 @@ function displayProducts() {
   // Clear existing product lists
   generatorlist.innerHTML = "";
   editorList.innerHTML = "";
-  booksList.innerHTML = "";
+  productivityList.innerHTML = "";
   weatherList.innerHTML = "";
   // Filter products and display in respective lists
   products.forEach((product) => {
@@ -167,10 +220,10 @@ function displayProducts() {
         case "editor":
           editorList.appendChild(li);
           break;
-        case "books":
-          booksList.appendChild(li);
+        case "productivity":
+          productivityList.appendChild(li);
           break;
-        case "books":
+        case "weather":
           weatherList.appendChild(li);
           break;
       }
