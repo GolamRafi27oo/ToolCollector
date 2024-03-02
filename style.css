@@ -10,9 +10,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #131314;
-  color: #444746;
+  background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(234.55, 40%, 16%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }
+
 .navbar a{
   color: #444746;
   font-weight: 600;
@@ -22,8 +25,6 @@ body {
   background: linear-gradient(to right, #5481EB 0%, #D96570 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  
-
 }
 .container-fluid{
   padding: 0 10vh;
@@ -37,6 +38,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 h1 {
@@ -50,15 +52,40 @@ input[type="text"] {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
-  background-color: #1e1f20;
+  backdrop-filter: blur(25px) saturate(300%);
+  -webkit-backdrop-filter: blur(25px) saturate(300%);
+  background-color: rgba(30, 31, 32, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: .2s;
 
+}
+input[type="text"]:focus{
+  outline: none;
+  backdrop-filter: blur(25px) saturate(300%);
+  -webkit-backdrop-filter: blur(25px) saturate(300%);
+  background-color: rgba(20, 20, 20, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: .2s;
+
+  
 }
 .categoryFilter{
   font-weight: 500;
   border: none;
   padding: 2px;
   border-radius: 5px;
-  background-color: #1e1f20;
+  backdrop-filter: blur(25px) saturate(300%);
+  -webkit-backdrop-filter: blur(25px) saturate(300%);
+  background-color: rgba(20, 20, 20, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.categoryFilter option{
+  background-color: #000000;
+  
+}
+.categoryFilter:focus{
+  outline: none; 
 
 }
 
@@ -74,11 +101,18 @@ input[type="text"] {
   margin: 5px;
   padding-right: 5px;
   border-radius: 10px;
-  background-color: #1e1f20;
-  color: #f8f9fa;
+  backdrop-filter: blur(25px) saturate(300%);
+  -webkit-backdrop-filter: blur(25px) saturate(300%);
+  background-color: rgba(30, 31, 32, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #f8f9fa;  
+  transition: .2s;
 }
 .product-item:hover{
-  background-color: #2f2f30;
+  backdrop-filter: blur(25px) saturate(300%);
+  -webkit-backdrop-filter: blur(25px) saturate(300%);
+  background-color: rgba(20, 20, 20, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .product-item a{
   font-size: 14px;
