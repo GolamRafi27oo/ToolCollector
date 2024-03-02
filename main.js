@@ -9,6 +9,13 @@ const products = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png",
   },
   {
+    name: "Gemini GPT (AI text generator)",
+    category: "generator",
+    link: "https://gemini.google.com/app",
+    image:
+      "https://assets.anakin.ai/app/app-icon/custom/20231227/syTfHWQJgP9gfyzl.jpeg",
+  },
+  {
     name: "Copy.ai Copywriter (AI text generator)",
     category: "generator",
     link: "https://www.copy.ai/ ",
