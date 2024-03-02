@@ -58,6 +58,13 @@ const products = [
       "https://lumen5.com/learn/wp-content/uploads/2022/03/L5-logo-fullColor-rgb-Purple-Square.png",
   },
   {
+    name: "Invideo (AI video generator)",
+    category: "generator",
+    link: "https://ai.invideo.io/",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKu0roO5M-n-1BKgyDh1VzKZf8vUBVzbnRJhGGSqYwA&s",
+  },
+  {
     name: "QR Code Generator",
     category: "generator",
     link: "https://login.qr-code-generator.com/",
@@ -119,31 +126,36 @@ const products = [
     name: "Quillbot (Paraphraser)",
     category: "productivity",
     link: "https://quillbot.com/",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
     name: "Quillbot (Grammar check)",
     category: "productivity",
     link: "https://quillbot.com/grammar-check",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
     name: "Quillbot (Summarize)",
     category: "productivity",
     link: "https://quillbot.com/summarize",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
     name: "Quillbot (Translate)",
     category: "productivity",
     link: "https://quillbot.com/translate",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
     name: "Quillbot (Citation-generator)",
     category: "productivity",
     link: "https://quillbot.com/citation-generator",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
   {
     name: "Grammarly (Plagiarism-checker)",
@@ -151,12 +163,26 @@ const products = [
     link: "https://www.grammarly.com/plagiarism-checker",
     image: "https://www.mooclab.club/showcase/grammarly.503/cover-image",
   },
-
   {
     name: "Planner5d (House desinger)",
     category: "productivity",
     link: "https://planner5d.com/",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/13/Planner_5D_logo.png",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Planner_5D_logo.png",
+  },
+  {
+    name: "Anonymouse Mail(Sent mail)",
+    category: "productivity",
+    link: "https://anonymousemail.me/",
+    image:
+      "https://cdn6.aptoide.com/imgs/c/c/2/cc2d46d7a9055e15c478aeec17ea8682_icon.png",
+  },
+  {
+    name: "Mail.tm (Receive temporary mail)",
+    category: "productivity",
+    link: "https://mail.tm/en/",
+    image:
+      "https://api.nuget.org/v3-flatcontainer/smorcirl.tempmail/2.0.2/icon",
   },
 
   // weather ///////////////////
@@ -164,7 +190,50 @@ const products = [
     name: "Windy (weather)",
     category: "weather",
     link: "https://www.windy.com/",
-    image: "https://s.cafebazaar.ir/images/icons/com.windyty.android-1c048d7d-4928-4732-8f94-73f66bd0cfb1_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize",
+    image:
+      "https://s.cafebazaar.ir/images/icons/com.windyty.android-1c048d7d-4928-4732-8f94-73f66bd0cfb1_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize",
+  },
+
+  // downloader ///////////////
+  {
+    name: "SnapSave (Download video from anywhere)",
+    category: "downloader",
+    link: "https://en.savefrom.net/284/sf",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.50147.2c2f078f-dc17-4078-96ee-c1e04ebba238.e6061426-57b5-401f-9bb7-545af122a08a.14c779f1-f982-4ccb-a267-6550ab97c644",
+  },
+  {
+    name: "Fdown (Download from facebook)",
+    category: "downloader",
+    link: "https://fdown.net/download.php",
+    image: "https://pic.clubic.com/v1/images/2092956/raw",
+  },
+  {
+    name: "Savefrom (Download from instagram)",
+    category: "downloader",
+    link: "https://en.savefrom.net/274/download-from-instagram",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.50147.2c2f078f-dc17-4078-96ee-c1e04ebba238.e6061426-57b5-401f-9bb7-545af122a08a.14c779f1-f982-4ccb-a267-6550ab97c644",
+  },
+  {
+    name: "YTMP3 (Download MP3/ audio from youtube)",
+    category: "downloader",
+    link: "https://ytmp3.nu/gK9p/",
+    image:
+      "https://cdn.bio.link/uploads/profile_pictures/2022-08-17/QgcURBBQsq5HwFXXbCNQqqx3sTw7wwtc.png",
+  },
+  {
+    name: "YTS (Download movie)",
+    category: "downloader",
+    link: "https://yts.mx/",
+    image: "https://yts.mx/assets/images/website/og_yts_logo.png",
+  },
+  {
+    name: "Pirate Bay (Download anything)",
+    category: "downloader",
+    link: "https://www.tpbproxypirate.com/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/1200px-The_Pirate_Bay_logo.svg.png",
   },
   // Add more products as needed
 ];
@@ -178,6 +247,7 @@ const generatorlist = document.getElementById("generatorlist");
 const editorList = document.getElementById("editorList");
 const productivityList = document.getElementById("productivityList");
 const weatherList = document.getElementById("weatherList");
+const downloaderList = document.getElementById("downloaderList");
 
 const mostSearchedList = document.getElementById("mostSearchedList");
 
@@ -191,6 +261,8 @@ function displayProducts() {
   editorList.innerHTML = "";
   productivityList.innerHTML = "";
   weatherList.innerHTML = "";
+  downloaderList.innerHTML = "";
+
   // Filter products and display in respective lists
   products.forEach((product) => {
     const nameMatches = product.name.toLowerCase().includes(searchTerm);
@@ -225,6 +297,9 @@ function displayProducts() {
           break;
         case "weather":
           weatherList.appendChild(li);
+          break;
+        case "downloader":
+          downloaderList.appendChild(li);
           break;
       }
     }
@@ -290,3 +365,15 @@ searchInput.addEventListener("input", () => {
 
 // Initial display of products
 displayProducts();
+
+
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});

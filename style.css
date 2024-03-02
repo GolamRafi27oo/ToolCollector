@@ -4,30 +4,68 @@ body {
   margin: 0;
   padding: 0;
 }
+.container-fluid{
+  padding: 0 10vh;
+}
 .container {
   padding: 0 20px;
 }
+
+.fixedElement{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 h1 {
   text-align: center;
 }
 input[type="text"] {
   width: 100%;
   padding: 10px;
+  border: 1px solid #198754;
+  border-radius: 5px;
   margin-bottom: 10px;
   font-size: 16px;
+  -webkit-box-shadow: inset 0px 0px 40px -12px rgba(189,189,189,0.61);
+-moz-box-shadow: inset 0px 0px 40px -12px rgba(189,189,189,0.61);
+box-shadow: inset 0px 0px 40px -12px rgba(189,189,189,0.61);
 }
+
+input[type=text]:focus {
+  -webkit-box-shadow: inset 0px 0px 40px -12px rgba(231, 231, 231, 0.61);
+  -moz-box-shadow: inset 0px 0px 40px -12px rgba(231, 231, 231, 0.61);
+  box-shadow: inset 0px 0px 40px -12px rgba(231, 231, 231, 0.61);
+  transition-duration: 1s;
+}
+.categoryFilter{
+  border: 1px solid #d3d2d2;
+  padding: 2px;
+  border-radius: 5px;
+  color: #7c7c7c;
+}
+
+
 .product-list {
   list-style-type: none;
   padding: 0;
+  margin-left: 4px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.product-item {
 
-  border: 1px solid #ccc;
+.product-item {
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
   padding-right: 2px;
   margin-right: 5px;
   margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 26px -14px rgba(189,189,189,0.89);
+  -moz-box-shadow: 0px 0px 26px -14px rgba(189,189,189,0.89);
+  box-shadow: 0px 0px 26px -14px rgba(189,189,189,0.89);
+}
+.product-item:hover{
+  background-color: #dad8d8;
 }
 .product-item a{
   width: 100%;
@@ -53,4 +91,49 @@ input[type="text"] {
 }
 .most-searched {
   margin-top: 30px;
+}
+
+
+@media screen and (max-width:992px) {
+  .product-list{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:508px) {
+  .product-list{
+    grid-template-columns: 1fr;
+  }
+  .container-fluid{
+    padding: 0 2vh;
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f8f9fa;
+  border-radius: 0 5px 5px 0;
+  border-left: 1px solid #198754;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
 }

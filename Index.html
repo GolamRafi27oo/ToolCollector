@@ -14,55 +14,44 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">ToolCollector</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <a href="mailto:golamrafi27oo@gmail.com" class="btn btn-outline-success" title="Suggest us a free online tool you like!">List Tool</a>
+          </form>
         </div>
       </div>
     </nav>
 
     <div class="container">
       <h1>Search Online Tools</h1>
-      <input type="text" id="searchInput" placeholder="Search products..." />
-      <select id="categoryFilter">
+      <div class="fixedElement">
+        <input type="text" id="searchInput" placeholder="Type tools keyword..." />
+
+      </div>
+      <select id="categoryFilter" class="categoryFilter">
         <option value="">All Categories</option>
         <option value="generator">Generator's</option>
         <option value="editor">Editor</option>
         <option value="productivity">productivity</option>
         <option value="weather">Weather</option>
-        <option value="Other">Other's</option>
+        <option value="downloader">Downloader</option>
         <!-- Add more categories as needed -->
       </select>
-
       <div class="category-title">GENERATOR</div>
       <ul class="product-list" id="generatorlist">
         <!-- generator product items will be dynamically added here -->
@@ -83,9 +72,9 @@
         <!-- weather product items will be dynamically added here -->
       </ul>
 
-      <div class="category-title">Other's</div>
-      <ul class="product-list" id="OtherList">
-        <!-- Other product items will be dynamically added here -->
+      <div class="category-title">DOWNLOADER</div>
+      <ul class="product-list" id="downloaderList">
+        <!-- downloader product items will be dynamically added here -->
       </ul>
 
       <div class="most-searched">
