@@ -16,6 +16,13 @@ const products = [
       "https://assets.anakin.ai/app/app-icon/custom/20231227/syTfHWQJgP9gfyzl.jpeg",
   },
   {
+    name: "Copilot GPT (AI text/ image/ Vacation /Cooking /Fitness/ Notebook generator)",
+    category: "generator",
+    link: "https://copilot.microsoft.com/",
+    image:
+      "https://victorycto.com/wp-content/uploads/2024/02/Microsoft-Copilot.png",
+  },
+  {
     name: "Copy.ai Copywriter (AI text generator)",
     category: "generator",
     link: "https://www.copy.ai/ ",
@@ -28,6 +35,20 @@ const products = [
     link: "https://labs.openai.com/",
     image:
       "https://chatgptaihub.com/wp-content/uploads/2023/06/ChatGpt-Logo-with-Black-Background.png",
+  },
+  {
+    name: "Adobe Firefly (AI Image Generator)",
+    category: "generator",
+    link: "https://firefly.adobe.com/generate/images",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Firefly_Logo.svg/2101px-Adobe_Firefly_Logo.svg.png",
+  },
+  {
+    name: "Image Creator From Microsft (AI Image Generator)",
+    category: "generator",
+    link: "https://www.bing.com/images/create",
+    image:
+      "https://store-images.s-microsoft.com/image/apps.59810.14282385397322807.c2ae4608-6889-4e10-816d-7f8254d76cad.c6b7e4a4-1f74-4c8f-8639-28fef3c09030",
   },
   {
     name: "Canva (AI Image Generator)",
@@ -78,6 +99,13 @@ const products = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMATwt_sLg_HbFkjWp0PLwhqrd4B0O1QNQ97CwQBkxA&s",
   },
+  {
+    name: "Quillbot (Citation generator)",
+    category: "generator",
+    link: "https://quillbot.com/citation-generator",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
+  },
 
   //Editor//////////////////////
   {
@@ -127,15 +155,23 @@ const products = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiM727lFwaeOpKBKvfmgGqX10NQqYe8dwsnykVtUVcg&s",
   },
+  {
+    name: "Ilovepdf (Convert to PDF/ convert from PDF)",
+    category: "editor",
+    link: "https://www.ilovepdf.com/",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ilovepdf.svg/1161px-Ilovepdf.svg.png",
+  },
 
   // productivity /////////////////////////
   {
-    name: "Quillbot (Paraphraser)",
+    name: "Quillbot (Paraphraser/ Grammar check/ Summarize/ Translate/ Citation generator )",
     category: "productivity",
     link: "https://quillbot.com/",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
+  /*
   {
     name: "Quillbot (Grammar check)",
     category: "productivity",
@@ -164,6 +200,7 @@ const products = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
+  */
   {
     name: "Grammarly (Plagiarism-checker)",
     category: "productivity",
@@ -202,6 +239,13 @@ const products = [
   },
 
   // downloader ///////////////
+  {
+    name: "Ninite (Download all software for windows)",
+    category: "downloader",
+    link: "https://ninite.com/",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrlCXXFoZbkAMscczaNnQUfxATaCznIQc066Tpew9FA&s",
+  },
   {
     name: "SnapSave (Download video from anywhere)",
     category: "downloader",
@@ -321,7 +365,7 @@ function updateMostSearched() {
     (a, b) => searchCounts[b] - searchCounts[a]
   );
 
-  sortedProducts.slice(0, 10).forEach((productName) => {
+  sortedProducts.slice(0, 9).forEach((productName) => {
     const product = products.find((p) => p.name === productName);
     if (product) {
       const li = document.createElement("li");
@@ -338,11 +382,11 @@ function updateMostSearched() {
 
       link.prepend(image);
       li.appendChild(link);
-
       mostSearchedList.appendChild(li);
     }
   });
 }
+updateMostSearched();
 
 // Event listeners for search input and category filter
 searchInput.addEventListener("input", () => {
@@ -373,14 +417,14 @@ searchInput.addEventListener("input", () => {
 // Initial display of products
 displayProducts();
 
-
-$(window).scroll(function(e){ 
-  var $el = $('.fixedElement'); 
-  var isPositionFixed = ($el.css('position') == 'fixed');
-  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
-    $el.css({'position': 'fixed', 'top': '0px'}); 
+//sticky search bar//
+$(window).scroll(function (e) {
+  var $el = $(".fixedElement");
+  var isPositionFixed = $el.css("position") == "fixed";
+  if ($(this).scrollTop() > 200 && !isPositionFixed) {
+    $el.css({ position: "fixed", top: "0px" });
   }
-  if ($(this).scrollTop() < 200 && isPositionFixed){
-    $el.css({'position': 'static', 'top': '0px'}); 
-  } 
+  if ($(this).scrollTop() < 200 && isPositionFixed) {
+    $el.css({ position: "static", top: "0px" });
+  }
 });
