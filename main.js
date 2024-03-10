@@ -44,6 +44,13 @@ const products = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Adobe_Firefly_Logo.svg/2101px-Adobe_Firefly_Logo.svg.png",
   },
   {
+    name: "Adobe Express (Socail post, flyers, videos etc generator)",
+    category: "generator",
+    link: "https://new.express.adobe.com/",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRZj0RpOrWVBqsxGrKFUT3vx9lHvueYfWDJhI9uFZfzw&s",
+  },
+  {
     name: "Image Creator From Microsft (AI Image Generator)",
     category: "generator",
     link: "https://www.bing.com/images/create",
@@ -156,11 +163,26 @@ const products = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiM727lFwaeOpKBKvfmgGqX10NQqYe8dwsnykVtUVcg&s",
   },
   {
-    name: "Ilovepdf (Convert to PDF/ convert from PDF)",
+    name: "123 Apps (Remove Logo & Watermark from Videos)",
     category: "editor",
+    link: "https://online-video-cutter.com/remove-logo",
+    image:
+      "https://cdn-1.webcatalog.io/catalog/123apps/123apps-icon-filled-256.png?v=1675597540496",
+  },
+  // converter
+  {
+    name: "Ilovepdf (Convert to PDF/ convert from PDF)",
+    category: "converter",
     link: "https://www.ilovepdf.com/",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ilovepdf.svg/1161px-Ilovepdf.svg.png",
+  },
+  {
+    name: "Video Converter (Convert video to other format)",
+    category: "converter",
+    link: "https://video-converter.com/",
+    image:
+      "https://cdn-1.webcatalog.io/catalog/123apps/123apps-icon-filled-256.png?v=1675597540496",
   },
 
   // productivity /////////////////////////
@@ -296,10 +318,10 @@ const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const generatorlist = document.getElementById("generatorlist");
 const editorList = document.getElementById("editorList");
+const converterList = document.getElementById("converterList");
 const productivityList = document.getElementById("productivityList");
 const weatherList = document.getElementById("weatherList");
 const downloaderList = document.getElementById("downloaderList");
-
 const mostSearchedList = document.getElementById("mostSearchedList");
 
 // Function to display products based on search and category filters
@@ -310,6 +332,7 @@ function displayProducts() {
   // Clear existing product lists
   generatorlist.innerHTML = "";
   editorList.innerHTML = "";
+  converterList.innerHTML = "";
   productivityList.innerHTML = "";
   weatherList.innerHTML = "";
   downloaderList.innerHTML = "";
@@ -342,6 +365,9 @@ function displayProducts() {
           break;
         case "editor":
           editorList.appendChild(li);
+          break;
+        case "converter":
+          converterList.appendChild(li);
           break;
         case "productivity":
           productivityList.appendChild(li);

@@ -27,6 +27,11 @@ body {
   color: #444746;
   font-weight: 600;
 }
+.navbar img{
+  width: 50px;
+  padding: 3px;
+  margin-right: 5px;
+}
 .mainText {
   cursor: default;
   background: #5481eb;
