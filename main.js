@@ -454,3 +454,13 @@ $(window).scroll(function (e) {
     $el.css({ position: "static", top: "0px" });
   }
 });
+
+/*
+const page = document.getElementById("main");
+const about = document.getElementById("testy");
+
+about.addEventListener("click", function () {
+  console.log("clicked");
+  page.innerHTML = `heelo`
+
+})*/
