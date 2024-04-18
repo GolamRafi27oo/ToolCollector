@@ -14,14 +14,16 @@
   <body>
     <div class="fb-container">
       <div class="feedback-container">
-        <h2 class="mainText" >Send Feedback Or list Tools</h2>
-        <h4>We'd love to hear your thoughts or suggestions about ToolCollector.</h4>
+        <h2 class="mainText">Send Feedback Or list Tools</h2>
+        <h4>
+          We'd love to hear your thoughts or suggestions about ToolCollector.
+        </h4>
         <form class="feedback-form" id="feedback-form">
           <input
             id="feedback-subject"
             name="subject"
             type="text"
-            placeholder="Subject or tools Name"/>
+            placeholder="Subject or tools Name" />
           <textarea
             id="feedback-text"
             name="feedback-text"
@@ -51,14 +53,6 @@
             alert("Please enter your feedback");
           }
         });
-        /*
-        function addFeedback(feedback) {
-            const li = document.createElement('li');
-            li.classList.add('feedback-item');
-            li.textContent = feedback;
-            feedbackList.appendChild(li);
-        }
-*/
 
         function sendFeedback(feedback, subject) {
           // Replace 'YOUR_EMAIL_ADDRESS' with your email address

@@ -324,6 +324,14 @@ const weatherList = document.getElementById("weatherList");
 const downloaderList = document.getElementById("downloaderList");
 const mostSearchedList = document.getElementById("mostSearchedList");
 
+// Set the copyright year dynamically
+function getCopyrightYear() {
+  const currentYear = new Date().getFullYear();
+  return currentYear;
+}
+document.getElementById("footer").innerHTML =
+  "&copy; " + getCopyrightYear() + " MyCompany. All rights reserved.";
+
 // Function to display products based on search and category filters
 function displayProducts() {
   const searchTerm = searchInput.value.toLowerCase();
@@ -454,13 +462,3 @@ $(window).scroll(function (e) {
     $el.css({ position: "static", top: "0px" });
   }
 });
-
-/*
-const page = document.getElementById("main");
-const about = document.getElementById("testy");
-
-about.addEventListener("click", function () {
-  console.log("clicked");
-  page.innerHTML = `heelo`
-
-})*/
