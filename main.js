@@ -113,7 +113,13 @@ const products = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThV0YMgEJ2ME2GDuGIahQ_USD5bXB3Ngi9qvnaGaPyRKY_ovTknRbD4V8ifM_nIl7VYmI&usqp=CAU",
   },
-
+  {
+    name: "Card Generator (Visa, Master, ATM etc)",
+    category: "generator",
+    link: "https://dnschecker.org/credit-card-generator.php",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkZWafo81U_MuK72XOfvugWUdBkGmhM_HSp3guk0RxaBNa5R99k5ct1HqzeSmwLSYzAZc&usqp=CAU",
+  },
   //Editor//////////////////////
   {
     name: "Photopea (Image/ Photo Editor)",
