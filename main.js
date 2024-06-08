@@ -268,6 +268,13 @@ const products = [
 
   // downloader ///////////////
   {
+    name: "FileCR (Download any cracked software, app, games for windows, mac, android)",
+    category: "downloader",
+    link: "https://filecr.com/en/",
+    image:
+      "https://asset.brandfetch.io/idn6dKcEf6/ido5OBz6WP.jpeg",
+  },
+  {
     name: "Ninite (Download all software for windows)",
     category: "downloader",
     link: "https://ninite.com/",
@@ -310,6 +317,7 @@ const products = [
   {
     name: "Pirate Bay (Download anything)",
     category: "downloader",
+    tag: "funny",
     link: "https://www.tpbproxypirate.com/",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/The_Pirate_Bay_logo.svg/1200px-The_Pirate_Bay_logo.svg.png",
@@ -328,13 +336,15 @@ const converterList = document.getElementById("converterList");
 const productivityList = document.getElementById("productivityList");
 const weatherList = document.getElementById("weatherList");
 const downloaderList = document.getElementById("downloaderList");
-const mostSearchedList = document.getElementById("mostSearchedList");
+//const mostSearchedList = document.getElementById("mostSearchedList");
 
 // Set the copyright year dynamically
 function getCopyrightYear() {
   const currentYear = new Date().getFullYear();
   return currentYear;
 }
+
+
 document.getElementById("footer").innerHTML =
   "&copy; " + getCopyrightYear() + " MyCompany. All rights reserved.";
 
@@ -350,6 +360,7 @@ function displayProducts() {
   productivityList.innerHTML = "";
   weatherList.innerHTML = "";
   downloaderList.innerHTML = "";
+  
 
   // Filter products and display in respective lists
   products.forEach((product) => {
@@ -358,6 +369,7 @@ function displayProducts() {
       selectedCategory === "" || product.category === selectedCategory;
 
     if (nameMatches && categoryMatches) {
+      
       const li = document.createElement("li");
       li.classList.add("product-item");
 
@@ -398,6 +410,7 @@ function displayProducts() {
 }
 
 // Function to update most searched products
+/*
 function updateMostSearched() {
   mostSearchedList.innerHTML = "";
 
@@ -427,15 +440,15 @@ function updateMostSearched() {
   });
 }
 updateMostSearched();
-
+*/
 // Event listeners for search input and category filter
 searchInput.addEventListener("input", () => {
   displayProducts();
-  updateMostSearched();
+  //updateMostSearched();
 });
 categoryFilter.addEventListener("change", () => {
   displayProducts();
-  updateMostSearched();
+  //updateMostSearched();
 });
 
 // Increment search count for a product
@@ -449,7 +462,7 @@ searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
   products.forEach((product) => {
     if (product.name.toLowerCase().includes(searchTerm)) {
-      incrementSearchCount(product.name);
+     incrementSearchCount(product.name);
     }
   });
 });
@@ -458,7 +471,7 @@ searchInput.addEventListener("input", () => {
 displayProducts();
 
 //sticky search bar//
-$(window).scroll(function (e) {
+window.scroll(function (e) {
   var $el = $(".fixedElement");
   var isPositionFixed = $el.css("position") == "fixed";
   if ($(this).scrollTop() > 200 && !isPositionFixed) {
