@@ -346,7 +346,7 @@ function getCopyrightYear() {
 
 
 document.getElementById("footer").innerHTML =
-  "&copy; " + getCopyrightYear() + " MyCompany. All rights reserved.";
+  "&copy; " + getCopyrightYear() + " ToolCollector. All rights reserved.";
 
 // Function to display products based on search and category filters
 function displayProducts() {
