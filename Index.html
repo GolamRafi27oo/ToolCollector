@@ -1,111 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tool Collector</title>
-    <link rel="icon" type="image/x-icon" href="image/school.png">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img src="image/school.png" alt="" />ToolCollector</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="about"
-                aria-current="page"
-                href="feedback.html"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="feedback.html"
-                >Feedback</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <a
-              href="feedback.html"
-              class="btn btn-outline-success"
-              title="Suggest us a free online tool you like!"
-              >List Tool</a
-            >
-          </form>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Collector</title>
+  <link rel="icon" type="image/x-icon" href="image/school.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="image/school.png" alt="" />ToolCollector</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="about" aria-current="page" href="https://golamrafi27oo.github.io/aboutgolam/"
+              target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="feedback.html" class="btn btn-outline-success" title="Suggest us a free online tool you like!">List
+            Tool</a>
+        </form>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container">
-      <h1 class="mainText">Search Online Tools</h1>
-      <div class="fixedElement">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Type tools keyword..." />
-      </div>
-      <select id="categoryFilter" class="categoryFilter">
-        <option value="">All Categories</option>
-        <option value="generator">Generator's</option>
-        <option value="editor">Editor</option>
-        <option value="converter">Converter</option>
-        <option value="productivity">productivity</option>
-        <option value="weather">Weather</option>
-        <option value="downloader">Downloader</option>
-        <!-- Add more categories as needed -->
-      </select>
-      <!-- <div class="category-title">ARTIFICIAL INTELLIGENCE & TOOLS</div> -->
-      <div class="category-title">GENERATOR</div>
-      <ul class="product-list" id="generatorlist">
-        <!-- generator product items will be dynamically added here -->
-      </ul>
+  <div class="container">
+    <h1 class="mainText">Search Online Tools</h1>
+    <div class="fixedElement">
+      <input type="text" id="searchInput" placeholder="Type tools keyword..." />
+    </div>
+    <select id="categoryFilter" class="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="generator">Generator's</option>
+      <option value="editor">Editor</option>
+      <option value="converter">Converter</option>
+      <option value="productivity">productivity</option>
+      <option value="weather">Weather</option>
+      <option value="downloader">Downloader</option>
+      <!-- Add more categories as needed -->
+    </select>
+    <!-- <div class="category-title">ARTIFICIAL INTELLIGENCE & TOOLS</div> -->
+    <div class="category-title">GENERATOR</div>
+    <ul class="product-list" id="generatorlist">
+      <!-- generator product items will be dynamically added here -->
+    </ul>
 
-      <div class="category-title">EDITOR</div>
-      <ul class="product-list" id="editorList">
-        <!-- editor product items will be dynamically added here -->
-      </ul>
-      <div class="category-title">CONVERTER</div>
-      <ul class="product-list" id="converterList">
-        <!-- editor product items will be dynamically added here -->
-      </ul>
-      <div class="category-title">Productivity</div>
-      <ul class="product-list" id="productivityList">
-        <!-- productivity product items will be dynamically added here -->
-      </ul>
+    <div class="category-title">EDITOR</div>
+    <ul class="product-list" id="editorList">
+      <!-- editor product items will be dynamically added here -->
+    </ul>
+    <div class="category-title">CONVERTER</div>
+    <ul class="product-list" id="converterList">
+      <!-- editor product items will be dynamically added here -->
+    </ul>
+    <div class="category-title">Productivity</div>
+    <ul class="product-list" id="productivityList">
+      <!-- productivity product items will be dynamically added here -->
+    </ul>
 
-      <div class="category-title">WEATHER</div>
-      <ul class="product-list" id="weatherList">
-        <!-- weather product items will be dynamically added here -->
-      </ul>
+    <div class="category-title">WEATHER</div>
+    <ul class="product-list" id="weatherList">
+      <!-- weather product items will be dynamically added here -->
+    </ul>
 
-      <div class="category-title">DOWNLOADER</div>
-      <ul class="product-list" id="downloaderList">
-        <!-- downloader product items will be dynamically added here -->
-      </ul>
+    <div class="category-title">DOWNLOADER</div>
+    <ul class="product-list" id="downloaderList">
+      <!-- downloader product items will be dynamically added here -->
+    </ul>
 
-      <!-- Most searched product items will be dynamically added here -->
-      <!--
+    <!-- Most searched product items will be dynamically added here -->
+    <!--
       <div class="most-searched">
         <div class="category-title">Most Searched By You</div>
         <ul class="product-list" id="mostSearchedList">
@@ -113,14 +90,14 @@
         </ul>
       </div>
       -->
-    </div>
+  </div>
 
-    <footer id="footer" class="copyRight"></footer>
+  <footer id="footer" class="copyRight"></footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
